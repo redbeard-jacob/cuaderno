@@ -89,8 +89,9 @@ def save_as_file():
         #load saved file
         root.title("Saving File in Folder...")
         time.sleep(3)
-        root.title("Successfully saved file")
-
+        root.title("Successfully saved file to your computer")
+        time.sleep(5)
+        
         #update status bars
         name = text_file
         status_bar.config(text=f'{name}        ')
