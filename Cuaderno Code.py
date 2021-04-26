@@ -51,6 +51,7 @@ def new_file():
 
 #open files
 def open_file():
+    
     #delete previous text
     my_text.delete("1.0", END)
     
