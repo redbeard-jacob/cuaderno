@@ -138,32 +138,7 @@ def paste_text(e):
             my_text.insert(position, selected)
             
 def run():
-
-  def root_set():
-    print("type 'help' for more options and 'exit' to exit and 'run' to run a file")
-    cli = input("run a file>>>")
-    if root == "exit":
-      sys.exit()
-
-    while cli == "help":
-      f = open("ht.txt")
-      info = f.read()
-      print(info)
-      print("type 'help' for more options and 'exit' to exit and 'run' to run a file")
-      cli = input("run a file>>>")
-
-    while cli == "run":  
-      filename = input("filename>>>")
-      file = str("python3 " +  filename)
-      os.system(file)
-      print("type 'help' for more options and 'exit' to exit and 'run' to run a file")
-      cli = input(f"{open_status_name}>>>")
-
-    
-  count = 0
-  while count == 0:
-    root_set()
-
+    import terminal
 
 # create main frame
 my_frame = Frame(root)
