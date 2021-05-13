@@ -8,7 +8,7 @@ import sys
 
 root = Tk()
 root.title("Cuaderno - Untitled")
-#root.iconbitmap('C:/Users/Wall Brothers/Desktop/cuaderno/Cuaderno Text.py')
+root.iconbitmap('C:/Users/Wall Brothers/Desktop/cuaderno/Cuaderno Code icon.ico')
 root.geometry("1200x600")
 
 global open_status_name
