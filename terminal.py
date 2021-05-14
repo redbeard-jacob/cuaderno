@@ -17,10 +17,13 @@ def root_set():
     filename = input("filename>>>")
     file = str("python3 " +  filename)
     os.system(file)
-    print("type 'help' for more options and 'exit' to exit and 'run' to run a file")
+    #print("type 'help' for more options and 'exit' to exit and 'run' to run a file")
     root = input("run a file>>>")
   if root == "cls":
     os.system("cls")
+  if root == "cd":
+    foldername = input("folder>>>")
+    os.system("cd " + foldername)
     
 count = 0
 while count == 0:
