@@ -19,6 +19,8 @@ def root_set():
     os.system(file)
     print("type 'help' for more options and 'exit' to exit and 'run' to run a file")
     root = input("run a file>>>")
+  if root == "cls":
+    os.system("cls")
     
 count = 0
 while count == 0:
