@@ -38,29 +38,30 @@ def open_file():
     #grab filename
     text_file = filedialog.askopenfilename(defaultextension="*.txt", initialdir="C:/Users/Wall Brothers/Desktop", title="Open File", filetypes=(("Text Files", "*.txt"), ("HTML Files", "*.html"), ("Python Files", "*.py"), ("All Files", "*.*")))
 
-    root.title("Opening File...")
-
-    time.sleep(3)
-
-    #check if file opened
     if text_file:
-    #make opened file global file
-        global open_status_name
-        open_status_name = text_file
-    
-    #update status bars
-    name = text_file
-    status_bar.config(text=f'{name}        ')
-    name = name.replace("C:/Users/", "")
-    root.title(f'{name} - Cuaderno')
+      root.title("Opening File...")
 
-    #open file
-    text_file = open(text_file, 'r')
-    stuff = text_file.read()
-    #add file to textbox
-    my_text.insert(END, stuff)
-    #close the opened file
-    text_file.close()
+      time.sleep(3)
+  
+      #check if file opened
+      if text_file:
+      #make opened file global file
+          global open_status_name
+          open_status_name = text_file
+    
+      #update status bars
+      name = text_file
+      status_bar.config(text=f'{name}        ')
+      name = name.replace("C:/Users/", "")
+      root.title(f'{name} - Cuaderno')
+
+      #open file
+      text_file = open(text_file, 'r')
+      stuff = text_file.read()
+      #add file to textbox
+      my_text.insert(END, stuff)
+      #close the opened file
+      text_file.close()
 
 #Save as command
 def save_as_file():
