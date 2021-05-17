@@ -5,7 +5,6 @@ import time
 import os
 import sys
 
-
 root = Tk()
 root.title("Cuaderno - Untitled")
 root.iconbitmap('C:/Users/Wall Brothers/Desktop/cuaderno/Cuaderno Code icon.ico')

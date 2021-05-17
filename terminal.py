@@ -5,7 +5,7 @@ def root_set():
   print("type 'help' for more options and 'exit' to exit and 'run' to run a file")
   root = input("run a file>>>")
   if root == "exit":
-    sys.exit()
+    os.system("cls")
 
   while root == "help":
     f = open("ht.txt")
