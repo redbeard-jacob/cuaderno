@@ -16,6 +16,9 @@ open_status_name = False
 global selected
 selected=False
 
+toolbar_frame = Frame(root)
+toolbar_frame.pack(fill=X)
+
 #Create New File Function
 def new_file():
     #delete previous text
@@ -207,5 +210,17 @@ root.bind('<Control-v>', paste_text)
 
 fee = "Dogs"
 my_label = Label(root, text=fee[:-1]).pack()
+
+bnew = Button(toolbar_frame, text="New", command=new_file)
+bnew.grid(row=0, column=0, sticky=W, padx=5)
+
+bopen = Button(toolbar_frame, text="Open", command=open_file)
+bopen.grid(row=0, column=1, padx=5)
+
+bsave = Button(toolbar_frame, text="save", command=save_file)
+bsave.grid(row=0, column=2, padx=5)
+
+bsaveas = Button(toolbar_frame, text="Save As", command=save_as_file)
+bsaveas.grid(row=0, column=3, padx=5)
 
 root.mainloop()
